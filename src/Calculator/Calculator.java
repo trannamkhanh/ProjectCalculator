@@ -13,10 +13,10 @@ public class Calculator extends javax.swing.JFrame {
     /**
      * Creates new form Calculator
      */
-    double NumEnter1;
-    double NumEnter2;
-    double Result;
-    String op;
+    int NumEnter1;
+    int NumEnter2;
+    int Result;
+    int op;
 
     public Calculator() {
         initComponents();
