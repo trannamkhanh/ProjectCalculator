@@ -327,7 +327,7 @@ private void EnterNumbers(String q) {
     }//GEN-LAST:event_jbtnPlusActionPerformed
 
     private void jbtnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnCActionPerformed
-        jtxtResult.setText(" ");
+        jtxtResult.setText("null");
     }//GEN-LAST:event_jbtnCActionPerformed
 
     private void jbtnCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnCEActionPerformed
