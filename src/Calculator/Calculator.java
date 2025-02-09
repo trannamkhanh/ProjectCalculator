@@ -321,8 +321,8 @@ private void EnterNumbers(String q) {
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jbtnPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnPlusActionPerformed
-        NumEnter1 = Double.parseDouble(jtxtResult.getText());
-        jtxtResult.setText(" ");
+        NumEnter1 = Double.parseInt(jtxtResult.getText());
+        jtxtResult.setText("");
         op = "+";
     }//GEN-LAST:event_jbtnPlusActionPerformed
 
