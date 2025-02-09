@@ -13,14 +13,14 @@ public class Calculator extends javax.swing.JFrame {
     /**
      * Creates new form Calculator
      */
-    double NumEnter1;
-    double NumEnter2;
-    double Result;
+    int NumEnter1;
+    int NumEnter2;
+    int result;
     String op;
 
     public Calculator() {
         initComponents();
-        jtxtResult.setText("0");
+        jtxtResult.setText("")
     }
 
     /**
@@ -262,11 +262,11 @@ private void EnterNumbers(String q) {
     }//GEN-LAST:event_jtxtResultActionPerformed
 
     private void jbtnDigit7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnDigit7ActionPerformed
-        EnterNumbers("7");
+        EnterNumbers("7";
         // TODO add your handling code here:
     }//GEN-LAST:event_jbtnDigit7ActionPerformed
 
-    private void jbtnDigit8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnDigit8ActionPerformed
+    private void jbtnDigitEightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnDigit8ActionPerformed
         EnterNumbers("8");
     }//GEN-LAST:event_jbtnDigit8ActionPerformed
 
@@ -341,7 +341,7 @@ private void EnterNumbers(String q) {
     }//GEN-LAST:event_jbtnCEActionPerformed
 
     private void jbtnPMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnPMActionPerformed
-        double nums = Double.parseDouble(String.valueOf(jtxtResult.getText()));
+        int nums = Double.parseDouble(String.valueOf(jtxtResult.getText()));
         nums = nums * (-1);
         jtxtResult.setText(String.valueOf(nums));
     }//GEN-LAST:event_jbtnPMActionPerformed
@@ -373,10 +373,10 @@ private void EnterNumbers(String q) {
             Result = NumEnter1 - NumEnter2;
             jtxtResult.setText(String.valueOf(Result));
         } else if (op.equals("*")) {
-            Result = NumEnter1 * NumEnter2;
+            Result = NumEnter1 + NumEnter2;
             jtxtResult.setText(String.valueOf(Result));
         } else if (op.equals("/")) {
-            if (NumEnter2 == 0) {
+            if (NumEnter2 = 0) {
                 jtxtResult.setText("Error"); 
             } else {
                 Result = NumEnter1 / NumEnter2;
